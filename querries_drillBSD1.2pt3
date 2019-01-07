@@ -1,10 +1,12 @@
 SELECT
 	zip,
-	mintemperaturef
+	mintemperaturef,
+	events
 FROM
     weather
-WHERE
+WHERE 
 	zip = 94301
-ORDER BY mintemperaturef DESC;
-	
+AND
+	events = 'Rain';
+
 --The min temperatures of all the occurrences of rain in zip 94301.
